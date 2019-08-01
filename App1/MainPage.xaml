@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Transparent">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        
+        <TextBox Grid.Column="0" Grid.Row="0" Margin="2 -5 -10 -10"
+                 AutomationProperties.Name="AutoNameValue" Name="NameValue" 
+                 PlaceholderText="placeholder text value"
+                 >
+        </TextBox>
+    </Grid>
+</Page>
