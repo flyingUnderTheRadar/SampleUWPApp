@@ -6,17 +6,24 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="Transparent">
+    Background="Transparent" >
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
         </Grid.RowDefinitions>
-        
-        <TextBox Grid.Column="0" Grid.Row="0" Margin="2 -5 -10 -10"
+
+        <TextBox Grid.Column="0" Grid.Row="1" Margin="2 -5 -10 0"
                  AutomationProperties.Name="AutoNameValue" Name="NameValue" 
-                 PlaceholderText="placeholder text value"
-                 >
-        </TextBox>
+                 PlaceholderText="placeholder text value"/>
+
+        <PasswordBox
+            Grid.Column="0" Grid.Row="2"
+            Name="NameValue2" 
+            AutomationProperties.Name="AutoNameValue2" 
+            PlaceholderText="Your password" />
+        <Button Name="ak" Content="Ok" Grid.Column="0" Grid.Row="0" />
     </Grid>
 </Page>
